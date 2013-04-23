@@ -7,8 +7,6 @@ the [MyAnimeList Unofficial API](http://mal-api.com/) to fetch data.
 
 It was hacked together overnight in march 2011 and subsequently abandoned.
 
-Experiment with Android SDK (archive/abandoned)
-
 * **License:** [Public Domain](COPYING)
 * **Stability:** Experimental/Abandoned
 * **Android API level:** 4
