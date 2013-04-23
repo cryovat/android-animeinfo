@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SearchActivity!</string>
+    <string name="app_name">Anime info</string>
+    <string name="manga_adaptions">Manga adaptions</string>
+    <string name="prequels">Prequels</string>
+    <string name="sequels">Sequels</string>
+    <string name="side_stories">Side stories</string>
+    <string name="cover">Cover</string>
+    <string name="details">Details</string>
+    <string name="openInBrowser">Open in browser</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="information">Information</string>
+    <string name="animetype">Type:</string>
+    <string name="episodes">Episodes:</string>
+    <string name="rating">Rating:</string>
+    <string name="classification">Classification:</string>
+    <string name="status">Status:</string>
+    <string name="categories">Categories</string>
+    <string name="tags">Tags</string>
+    <string name="related">Related</string>
+    <string name="none">None</string>
+    <string name="na">N/A</string>
+    <string name="header">MAL Quicksearch</string>
+    <string name="viewfull">View full article in browser</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0"
+    >
+
+    <TextView android:background="@color/headers" android:textColor="@color/headertext" android:textSize="20sp" android:layout_width="fill_parent" android:textStyle="bold" android:layout_height="wrap_content" android:id="@+id/details_title" android:text="@string/header"></TextView>
+    
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@color/subheader">
+        <EditText android:text="haruhi" android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/searchBox" android:maxLines="1" android:layout_gravity="center_vertical" android:layout_marginBottom="4dip" android:layout_marginTop="4dip" android:layout_marginLeft="4dip"></EditText>
+        <Button android:layout_column="1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/searchButton" android:onClick="search" android:layout_gravity="center_vertical" android:drawableLeft="@drawable/ic_btn_search" android:layout_margin="4dip"></Button>
+    </TableRow>
+    <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/headers"></View>
+                    
+	<ListView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/resultsList"></ListView>
+
+</TableLayout>

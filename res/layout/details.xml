@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical" android:background="#FF2E51A2">
+    <TextView android:textColor="@color/headertext" android:textSize="20sp" android:layout_width="fill_parent" android:textStyle="bold" android:layout_height="wrap_content" android:id="@+id/details_title" android:text="@string/none"></TextView>
+    <TextView android:textColor="@color/headertext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/details_japanese_title" android:text="@string/none"></TextView>
+    <View android:id="@+id/view1" android:background="#FF909090" android:layout_width="fill_parent" android:layout_height="1dip"></View>
+    <FrameLayout android:layout_width="fill_parent" android:id="@+id/frameLayout1" android:layout_height="fill_parent" android:background="#FFFFFFFF">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/tableLayout1" android:stretchColumns="1">
+            <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow1" android:layout_height="wrap_content" android:background="@color/subheader">
+                <ImageView android:layout_width="wrap_content" android:src="@drawable/television" android:layout_height="wrap_content" android:id="@+id/imageView2"></ImageView>
+                <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/details_tv"></TextView>
+                <ImageView android:layout_width="wrap_content" android:src="@drawable/star" android:layout_height="wrap_content" android:id="@+id/imageView3"></ImageView>
+                <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/details_rating"></TextView>
+                <ImageView android:layout_width="wrap_content" android:src="@drawable/information" android:layout_height="wrap_content" android:id="@+id/imageView4"></ImageView>
+                <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/details_classification"></TextView>
+            </TableRow>
+            <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/headers"></View>            
+            <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="50dip" android:src="@drawable/icon" android:layout_height="fill_parent" android:id="@+id/details_cover"></ImageView>
+        </TableLayout>
+        <SlidingDrawer android:layout_width="fill_parent" android:layout_height="fill_parent" android:handle="@+id/details_d_handle" android:content="@+id/scrollView1">
+        
+        <TextView android:textColor="#FFFFFFFF" android:background="#FF2E51A2" android:gravity="center_horizontal|center_vertical" android:layout_width="fill_parent" android:layout_height="50dip" android:id="@+id/details_d_handle" android:text="Details" android:textSize="20dip" android:textStyle="bold">
+        </TextView>
+        	
+		<ScrollView android:id="@+id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#FFFFFFFF" >
+            <LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout2" android:layout_width="fill_parent">
+                <TableLayout android:stretchColumns="1" android:id="@+id/tableLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:background="@color/subheader" android:id="@+id/textView5" android:textStyle="bold" android:textSize="17dip" android:text="@string/synopsis" android:layout_width="fill_parent"></TextView>
+                    <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/headers"></View>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/details_d_synopsis" android:text="@string/none"></TextView>
+
+
+                    <TextView android:textSize="17dip" android:background="@color/subheader" android:layout_width="fill_parent" android:textStyle="bold" android:layout_height="wrap_content" android:id="@+id/TextView01" android:text="@string/information"></TextView>
+                    <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/headers"></View>
+                    
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow3" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:textStyle="bold" android:text="@string/animetype"></TextView>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:id="@+id/details_d_type" android:text="@string/na"></TextView>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow4" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView2" android:textStyle="bold" android:text="@string/episodes"></TextView>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:id="@+id/details_d_episodes" android:text="@string/na"></TextView>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow03" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextView06" android:text="@string/status"></TextView>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:id="@+id/details_d_status" android:text="@string/na"></TextView>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow02" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextView04" android:text="@string/classification"></TextView>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:id="@+id/details_d_classification" android:text="@string/na"></TextView>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow01" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextView02" android:text="@string/rating"></TextView>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:id="@+id/details_d_rating" android:text="@string/na"></TextView>
+                    </TableRow>
+
+                    <TextView android:layout_height="wrap_content" android:background="@color/subheader" android:textStyle="bold" android:textSize="17dip" android:layout_width="fill_parent" android:text="@string/categories"></TextView>
+                    <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/headers"></View>
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/details_d_categories" android:text="@string/none"></TextView>
+                    
+                    <TextView android:layout_height="wrap_content" android:background="@color/subheader" android:textStyle="bold" android:textSize="17dip" android:layout_width="fill_parent" android:text="@string/tags"></TextView>
+                    <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/headers"></View>
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/details_d_tags" android:text="@string/none"></TextView>
+
+                    <TextView android:layout_height="wrap_content" android:background="@color/subheader" android:textStyle="bold" android:textSize="17dip" android:layout_width="fill_parent" android:text="@string/prequels"></TextView>
+                    <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/headers"></View>
+                    <LinearLayout android:id="@+id/details_d_prequels" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical">
+                        <TextView android:text="@string/none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView3"></TextView>
+                    </LinearLayout>
+                    
+                    <TextView android:layout_height="wrap_content" android:background="@color/subheader" android:textStyle="bold" android:textSize="17dip" android:layout_width="fill_parent" android:text="@string/sequels"></TextView>
+                    <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/headers"></View>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/details_d_sequels">
+                        <TextView android:text="@string/none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView6"></TextView>
+                    </LinearLayout>
+                    
+                    <TextView android:layout_height="wrap_content" android:background="@color/subheader" android:textStyle="bold" android:textSize="17dip" android:layout_width="fill_parent" android:text="@string/side_stories"></TextView>
+                    <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/headers"></View>
+                    <LinearLayout android:layout_width="wrap_content" android:id="@+id/details_d_sidestories" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginBottom="20dip">
+                        <TextView android:text="@string/none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView4"></TextView>
+                    </LinearLayout>
+                    
+                    <Button android:textColor="@color/headers" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/details_d_viewFull" android:textAppearance="@style/AnimeButton" android:background="#00000000" android:text="@string/viewfull" android:layout_marginBottom="40dip"></Button>
+                    
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>        
+        </SlidingDrawer>
+    </FrameLayout>
+</LinearLayout>

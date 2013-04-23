@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:orientation="horizontal" android:layout_height="wrap_content">
+    <TableLayout android:id="@+id/tableLayout2" android:layout_height="fill_parent" android:background="@color/subheader" android:layout_width="48dip">
+        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:src="@drawable/icon" android:layout_span="2" android:id="@+id/resultImage" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent"></ImageView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="fill_parent" android:id="@+id/tableRow5">
+            <ImageView android:layout_width="wrap_content" android:src="@drawable/television" android:layout_height="wrap_content" android:id="@+id/imageView1"></ImageView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/resultEpisodes" android:textColor="@color/text" android:text="@string/na"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow6">
+            <ImageView android:layout_width="wrap_content" android:src="@drawable/star" android:layout_height="wrap_content"></ImageView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/resultRating" android:textColor="@color/text" android:text="@string/na"></TextView>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="fill_parent" android:orientation="vertical" android:layout_width="fill_parent">
+        <TextView android:text="TextView" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/resultTitle" android:textSize="16sp" android:textColor="@color/headers"></TextView>
+        <TextView android:text="TextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/resultSynopsis" android:layout_margin="2dip"></TextView>
+    </LinearLayout>
+</LinearLayout>

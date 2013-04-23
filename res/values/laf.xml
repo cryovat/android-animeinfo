@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AnimeListTheme" parent="android:Theme.Light.NoTitleBar">
+    </style>
+    <color name="subheader">#FFE1E7F5</color>
+        <color name="text">#FF000000</color>
+    <color name="headers">#FF2E51A2</color>
+    <color name="headertext">#FFFFFFFF</color>
+    <style name="AnimeButton">
+    	<item name="android:gravity">center_vertical|center_horizontal</item>
+    	<item name="android:textColor">#FF2E51A2</item>
+    	<item name="android:textSize">17dip</item>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:clickable">true</item>
+    	<item name="android:focusable">true</item>
+    	<item name="android:background">#00000000</item>
+    </style>
+</resources>
