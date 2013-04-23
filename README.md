@@ -13,4 +13,3 @@ Experiment with Android SDK (archive/abandoned)
 * **Stability:** Experimental/Abandoned
 * **Android API level:** 4
 * **Dependencies:** None
-* **Supported platforms:** Linux (Windows to come)
